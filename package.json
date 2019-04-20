@@ -1,0 +1,24 @@
+{
+  "name": "chromecast-dashboard",
+  "version": "1.0.0",
+  "description": "A simple dashboard application for Chromecast.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://jstty@github.com/jstty/chromecast-dashboard.git"
+  },
+  "author": "",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jstty/chromecast-dashboard/issues"
+  },
+  "homepage": "https://github.com/jstty/chromecast-dashboard#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}

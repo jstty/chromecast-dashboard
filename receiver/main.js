@@ -22,10 +22,12 @@ window.onload = function() {
 
   window.messageBus =
     window.castReceiverManager.getCastMessageBus(
-        'urn:x-cast:com.boombatower.chromecast-dashboard', cast.receiver.CastMessageBus.MessageType.JSON);
+        'urn:x-cast:com.jstty.chromecast-dashboard', cast.receiver.CastMessageBus.MessageType.JSON);
 
   window.messageBus.onMessage = function(event) {
     console.log('Message [' + event.senderId + ']: ' + event.data);
+
+    
 
     if (event.data['type'] == 'load') {
       $('#dashboard').attr('src', event.data['url']);

@@ -17,7 +17,7 @@ has two primary benefits.
 
 Visit the following Url for the sender portion of the application.
 
-https://boombatower.github.io/chromecast-dashboard/sender/
+https://jstty.github.io/chromecast-dashboard/sender/
 
 # Enjoy! #
 
