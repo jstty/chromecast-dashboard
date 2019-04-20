@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 
 const app = express();
-const port = 3000
+const port = process.env.PORT || 3000;
 
 app.use(morgan('common'));
 
@@ -16,8 +16,8 @@ let allowCrossDomain = function (req, res, next) {
 }
 app.use(allowCrossDomain);
 
-app.use( '/sender',   express.static('sender') );
-app.use( '/receiver', express.static('receiver') );
+app.use( '/sender',   express.static('../sender') );
+app.use( '/receiver', express.static('../receiver') );
 app.use( '/', (req, res) => {
     res.redirect('/sender');
 } );
